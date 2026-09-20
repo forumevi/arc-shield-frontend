@@ -254,7 +254,7 @@ export default function Home() {
             <div className="text-xs text-slate-500 pt-2 border-t border-slate-800 flex justify-between items-center">
               <span>Verified On-Chain Block: #{result.payment_info?.blockNumber}</span>
               <a
-                href={`https://explorer.arc.network/tx/${result.payment_info?.transactionHash}`}
+                href={`https://explorer.arc.io/tx/${result.payment_info?.transactionHash}`}
                 target="_blank"
                 rel="noreferrer"
                 className="text-blue-400 hover:underline flex items-center gap-1"
