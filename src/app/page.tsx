@@ -1,10 +1,10 @@
 'use client';
 
 import { useState } from 'react';
-import { ShieldCheck, ShieldAlert, AlertTriangle, Lock, RefreshCw, ExternalLink, Play, Github } from 'lucide-react';
+import { ShieldCheck, ShieldAlert, AlertTriangle, Lock, RefreshCw, ExternalLink, Github } from 'lucide-react';
 
 const GATEWAY_URL = 'https://arc-shield-gateway-373439937684.europe-west1.run.app';
-const GITHUB_URL = 'https://github.com/forumevi/arc-shield-x402';
+const GITHUB_URL = 'https://github.com/forumevi/arc-shield-frontend';
 
 export default function Home() {
   const [targetAddress, setTargetAddress] = useState('0x742d35Cc6634C0532925a3b844Bc454e4438f44e');
@@ -106,7 +106,7 @@ export default function Home() {
             </div>
           </div>
           <div className="flex items-center gap-3">
-            
+            <a
               href={GITHUB_URL}
               target="_blank"
               rel="noreferrer"
@@ -146,7 +146,7 @@ export default function Home() {
             <button
               onClick={handleAnalyze}
               disabled={loading}
-              className="bg-blue-600 hover:bg-blue-500 font-semibold px-6 py-3 rounded-xl transition flex items-center gap-2 disabled:opacity-50"
+              className="bg-blue-600 hover:bg-blue-500 font-semibold px-6 py-3 rounded-xl transition flex items-center gap-2 disabled:opacity-50 cursor-pointer"
             >
               {loading && <RefreshCw className="w-4 h-4 animate-spin" />}
               Request Analysis
@@ -192,7 +192,7 @@ export default function Home() {
                 <button
                   onClick={handleVerifyPayment}
                   disabled={loading}
-                  className="bg-amber-600 hover:bg-amber-500 text-slate-950 font-bold px-6 py-2 rounded-xl transition flex items-center gap-2"
+                  className="bg-amber-600 hover:bg-amber-500 text-slate-950 font-bold px-6 py-2 rounded-xl transition flex items-center gap-2 cursor-pointer"
                 >
                   {loading && <RefreshCw className="w-4 h-4 animate-spin" />}
                   Verify & Analyze
@@ -253,7 +253,7 @@ export default function Home() {
 
             <div className="text-xs text-slate-500 pt-2 border-t border-slate-800 flex justify-between items-center">
               <span>Verified On-Chain Block: #{result.payment_info?.blockNumber}</span>
-              
+              <a
                 href={`https://explorer.arc.network/tx/${result.payment_info?.transactionHash}`}
                 target="_blank"
                 rel="noreferrer"
