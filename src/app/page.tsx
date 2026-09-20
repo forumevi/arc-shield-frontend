@@ -1,7 +1,7 @@
 'use client';
 
 import { useState } from 'react';
-import { ShieldCheck, ShieldAlert, AlertTriangle, Lock, RefreshCw, ExternalLink, Github } from 'lucide-react';
+import { ShieldCheck, ShieldAlert, AlertTriangle, Lock, RefreshCw, ExternalLink, Code2 } from 'lucide-react';
 
 const GATEWAY_URL = 'https://arc-shield-gateway-373439937684.europe-west1.run.app';
 const GITHUB_URL = 'https://github.com/forumevi/arc-shield-frontend';
@@ -110,10 +110,10 @@ export default function Home() {
               href={GITHUB_URL}
               target="_blank"
               rel="noreferrer"
-              className="p-2 border border-slate-800 rounded-lg hover:border-slate-600 transition"
+              className="p-2 border border-slate-800 rounded-lg hover:border-slate-600 transition flex items-center gap-2 text-xs text-slate-300"
               title="View source on GitHub"
             >
-              <Github className="w-5 h-5 text-slate-300" />
+              <Code2 className="w-4 h-4 text-slate-300" /> GitHub
             </a>
             <span className="px-3 py-1 bg-emerald-500/10 border border-emerald-500/30 text-emerald-400 text-xs rounded-full flex items-center gap-2">
               <span className="w-2 h-2 rounded-full bg-emerald-400 animate-pulse" /> Arc Mainnet Live
