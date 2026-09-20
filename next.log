@@ -1,0 +1,10 @@
+nohup: ignoring input
+
+> frontend@0.1.0 start
+> next start
+
+▲ Next.js 16.3.5
+- Local:         http://localhost:3000
+- Network:       http://10.0.0.178:3000
+✓ Ready in 174ms
+✓ Running next.config.ts took 35ms
