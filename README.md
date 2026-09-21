@@ -1,6 +1,6 @@
 # ArcShield Security Oracle - Frontend UI
 
-This is the web user interface for **ArcShield Security Oracle**, built with Next.js, Tailwind CSS, and Lucide Icons for the **Build with Gemini XPRIZE — Agentic Economy Prize**.
+This is the web user interface for **ArcShield Security Oracle**, built with Next.js, Tailwind CSS, and Lucide Icons for Arc Mainnet & x402 Micropayment Ecosystem.
 
 ## 🔗 Quick Links
 * **Live Web App:** [https://arc-shield-frontend.vercel.app](https://arc-shield-frontend.vercel.app)
